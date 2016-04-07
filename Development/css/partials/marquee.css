@@ -1,5 +1,4 @@
 .marquee {
-	background: var(--marquee-background);
 	height: var(--marquee-height);
 	position: relative;
 
@@ -9,5 +8,31 @@
 		height: var(--marquee-height);
 		background: var(--marquee-background);
 		line-height:  var(--marquee-height);
+		top: 0;
+		left: 0%;
+
+		&.slidein-enter{
+			left: 100%;
+			opacity: .01;
+		}
+
+		&.slidein-enter.slidein-enter-active {
+			left: 0%;
+			opacity: 1;
+
+			transition: left .5s ease-in, opacity .5s ease-in;
+		}
+
+		&.slidein-leave{
+			left: 0%;
+			opacity: 1;
+		}
+
+		&.slidein-leave.slidein-leave-active {
+			left: -100%;
+			opacity: .01;
+
+			transition: left .5s ease-in, opacity 5s ease-in;
+		}
 	}
 }

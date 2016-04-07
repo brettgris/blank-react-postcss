@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import MarqueeItem from './children/MarqueeItem.jsx';
 
@@ -12,7 +13,7 @@ class MarqueeContainer extends Component {
 		}
 
 		this.changeItem = this.changeItem.bind(this);
-		setInterval(this.changeItem, 2000);
+		setInterval(this.changeItem, 5000);
 	}
 
 	renderItems(){
@@ -37,7 +38,9 @@ class MarqueeContainer extends Component {
 		return (
 			<div className="marquee col-sm-12">
 				<div className="row">
-					{this.renderItems()}
+					<ReactCSSTransitionGroup transitionName="slidein" transitionEnterTimeout={500} transitionLeaveTimeout={500} >
+						{this.renderItems()}
+					</ReactCSSTransitionGroup>
 				</div>
 			</div>
 		);
