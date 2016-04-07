@@ -1,0 +1,17 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css";
+
+/************************  VARIABLES  ************************/
+@import '../partials/_colors.css';
+@import '../partials/_sizes.css';
+@import '../partials/_fonts.css';
+@import '../partials/_type.css';
+@import '../partials/_mediaqueries.css';
+@import '../partials/_borders.css';
+
+/************************  GLOBALS  ************************/
+@import '../partials/globals.css';
+
+/************************  PARTIALS  ************************/
+@import '../partials/header.css';
+@import '../partials/marquee.css';
+@import '../partials/footer.css';

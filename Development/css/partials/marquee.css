@@ -1,0 +1,13 @@
+.marquee {
+	background: var(--marquee-background);
+	height: var(--marquee-height);
+	position: relative;
+
+	.item{
+		position: absolute;
+		width: 100%;
+		height: var(--marquee-height);
+		background: var(--marquee-background);
+		line-height:  var(--marquee-height);
+	}
+}

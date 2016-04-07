@@ -1,0 +1,107 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css";
+
+/************************  VARIABLES  ************************/
+:root{
+
+    /************************  BODY  ************************/
+
+    /************************  TYPE COLORS  ************************/
+
+    /************************  HEADER  ************************/
+
+    /************************  HEADER  ************************/
+}
+:root{
+
+    /************************** HEADER **********************************/
+
+    /*************************  MARQUEE *********************************/
+
+    /************************** FOOTER **********************************/
+}
+@font-face{
+    font-family: 'Museo';
+    src: url('../fonts/MuseoSansW00-500.eot');
+    src: url('../fonts/MuseoSansW00-500.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/MuseoSansW00-500.svg#Museo Sans W00 500') format('svg'), 
+    	 url('../fonts/MuseoSansW00-500.woff') format('woff'), 
+    	 url('../fonts/MuseoSansW00-500.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Museo';
+    src: url('../fonts/MuseoSansW00-100.eot');
+    src: url('../fonts/MuseoSansW00-100.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/MuseoSansW00-100.svg#Museo Sans W00 100') format('svg'), 
+    	 url('../fonts/MuseoSansW00-100.woff') format('woff'), 
+    	 url('../fonts/MuseoSansW00-100.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+/************************ BODY ********************/
+body{
+    color: #FFFFFF;
+    font-family: "Museo", Helvetica, Arial, sans-serif;
+}
+/**************** HEADERS ********************/
+h1{}
+h2{}
+h3{}
+h4{}
+h5{}
+h6{}
+/**************** BODY COPY ********************/
+p{}
+a{}
+li{}
+.btn{}
+/**************** GLOBAL CLASSES ********************/
+.center{
+    text-align: center;
+}
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+.justify{
+    text-align: justify;
+}
+:root{
+
+    /************************  PAGE  ************************/
+
+    /************************  HEADER  ************************/
+
+    /************************  MARQUEE  ***********************/
+
+    /************************  FOOTER  ************************/
+}
+
+/************************  GLOBALS  ************************/
+body{
+    background: url(../images/background.jpg) #000 no-repeat center center/cover;
+}
+
+/************************  PARTIALS  ************************/
+.header{
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+.marquee{
+    background: #000000;
+    height: 350px;
+    position: relative;
+}
+.marquee .item{
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    background: #000000;
+    line-height: 350px;
+}
+.footer{
+    padding-top: 50px;
+}

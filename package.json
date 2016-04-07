@@ -1,0 +1,43 @@
+{
+  "name": "simple-react-site",
+  "version": "1.0.0",
+  "description": "A Simple Starter Site built on Postcss and React/Redux",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.2.0",
+    "browser-sync": "^2.8.2",
+    "browserify": "^13.0.0",
+    "connect-history-api-fallback": "^1.1.0",
+    "css-mqpacker": "^4.0.1",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.1.0",
+    "gulp-uglify": "^1.5.3",
+    "postcss-cssnext": "^2.5.1",
+    "precss": "^1.4.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.9.1",
+    "bootstrap": "^3.3.6",
+    "history": "^2.0.1",
+    "jquery": "^2.2.2",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.7",
+    "react-redux": "^4.4.1",
+    "react-router": "^2.0.1",
+    "redux": "^3.3.1",
+    "redux-promise": "^0.5.3",
+    "underscore": "^1.8.3"
+  }
+}

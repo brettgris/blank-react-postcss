@@ -1,0 +1,4 @@
+.header{
+	padding-top: var(--header-padding); 
+	padding-bottom: var(--header-padding);
+}

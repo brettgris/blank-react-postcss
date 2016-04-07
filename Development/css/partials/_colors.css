@@ -1,0 +1,17 @@
+:root{
+	--imgPath: ../images/;
+
+	--white: #FFFFFF;
+	--black: #000000;
+	/************************  BODY  ************************/
+	--body-background: url(var(--imgPath)background.jpg) #000 no-repeat center center/cover;
+
+	/************************  TYPE COLORS  ************************/
+	--copy-color: var(--white);
+	--link-color: var(--white);
+
+	/************************  HEADER  ************************/
+	--marquee-background: var(--black);
+
+	/************************  HEADER  ************************/
+}

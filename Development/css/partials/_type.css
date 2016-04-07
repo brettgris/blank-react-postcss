@@ -1,0 +1,69 @@
+:root{
+	--font-family: "Museo", Helvetica, Arial, sans-serif;
+}
+
+/************************ BODY ********************/
+
+body{
+	color: var(--copy-color);
+	font-family: var(--font-family);
+}
+
+/**************** HEADERS ********************/
+h1{
+
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+h4{
+
+}
+
+h5{
+
+}
+
+h6{
+
+}
+
+/**************** BODY COPY ********************/
+p{
+
+}
+
+a{
+
+}
+
+li{
+
+}
+
+.btn{
+
+}
+
+/**************** GLOBAL CLASSES ********************/
+.center{
+	text-align: center;
+}
+
+.left{
+	text-align: left;
+}
+
+.right{
+	text-align: right;
+}
+
+.justify{
+	text-align: justify;
+}
