@@ -1,0 +1,31 @@
+.slider{
+	clear: both;
+	position:relative;
+	margin-top: var(--slider-margin-top);
+
+	.page{
+		height: var(--slider-height);
+
+		.item{
+			height: var(--slider-height);
+
+			.content{
+				height: var(--slider-height);
+				background: var(--slider-background);
+				text-align: center;
+				line-height: var(--slider-height);
+			}
+		}
+	}
+
+	.arrow {
+		position: absolute;
+		top: var(--arrow-top);
+		font-size: var(--arrow-height);
+		color: var(--arrow-color);
+
+		&.next{
+			right: 0;
+		}
+	}
+}

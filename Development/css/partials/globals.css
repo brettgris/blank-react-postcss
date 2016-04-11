@@ -1,5 +1,9 @@
 body{
 	background: var(--body-background);
 	width: 100%;
-	overflow: hidden;
+	overflow-x: hidden;
+}
+
+.clear{
+	clear: both;
 }

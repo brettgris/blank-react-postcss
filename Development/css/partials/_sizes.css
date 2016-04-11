@@ -10,6 +10,12 @@
 	--dot-size: 12px;
 	--dot-spacing: 10px;
 
+	/*************************  SLIDE HEIGHT *********************************/
+	--slider-height: 200px;
+	--slider-margin-top: 20px;
+	--arrow-height: 30px;
+
+	--arrow-top: calc( var(--slider-height)/2-var(--arrow-height)/2 -2  );
 
 	/************************** FOOTER **********************************/
 	--footer-padding: 50px;

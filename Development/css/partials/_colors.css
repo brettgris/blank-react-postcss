@@ -18,5 +18,8 @@
 	--dot-color: var(--med-grey);
 	--dot-highlight: var(--light-grey);
 
-	/************************  HEADER  ************************/
+	/************************  SLIDER  ************************/
+	--slider-background: var(--black);
+	--arrow-color: var(--white);
+
 }

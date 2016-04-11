@@ -9,13 +9,15 @@
 
     /************************  MARQUEE  ************************/
 
-    /************************  HEADER  ************************/
+    /************************  SLIDER  ************************/
 }
 :root{
 
     /************************** HEADER **********************************/
 
     /*************************  MARQUEE *********************************/
+
+    /*************************  SLIDE HEIGHT *********************************/
 
     /************************** FOOTER **********************************/
 }
@@ -87,7 +89,10 @@ li{}
 body{
     background: url(../images/background.jpg) #000 no-repeat center center/cover;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
+}
+.clear{
+    clear: both;
 }
 
 /************************  PARTIALS  ************************/
@@ -144,6 +149,32 @@ body{
 }
 .marquee .dots .dot:hover, .marquee .dots .dot.current{
     background: #cccccc;
+}
+.slider{
+    clear: both;
+    position: relative;
+    margin-top: 20px;
+}
+.slider .page{
+    height: 200px;
+}
+.slider .page .item{
+    height: 200px;
+}
+.slider .page .item .content{
+    height: 200px;
+    background: #000000;
+    text-align: center;
+    line-height: 200px;
+}
+.slider .arrow{
+    position: absolute;
+    top: 83px;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+.slider .arrow.next{
+    right: 0;
 }
 .footer{
     padding-top: 50px;
