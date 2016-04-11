@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import MarqueeItem from './children/MarqueeItem.jsx';
+import DotsContainer from './children/DotsContainer.jsx';
 
 class MarqueeContainer extends Component {
 	constructor(props){
@@ -12,8 +13,12 @@ class MarqueeContainer extends Component {
 			item: 0
 		}
 
+		this.renderItems = this.renderItems.bind(this);
+		this.nextItem = this.nextItem.bind(this);
 		this.changeItem = this.changeItem.bind(this);
-		setInterval(this.changeItem, 5000);
+		this.resetTimeout = this.resetTimeout.bind(this);
+
+		this.resetTimeout();
 	}
 
 	renderItems(){
@@ -24,10 +29,22 @@ class MarqueeContainer extends Component {
 		});
 	}
 
-	changeItem(){
+	nextItem(){
+		var n = (this.state.item<this.props.marquees.length-1) ? this.state.item+1 : 0;
+		this.changeItem(n);
+	}
+
+	changeItem(n){
+		this.resetTimeout();
+
 		this.setState({
-			item: (this.state.item<this.props.marquees.length-1) ? this.state.item+1 : 0
+			item: n
 		});
+	}
+
+	resetTimeout(){
+		if (this.to) clearTimeout(this.to);
+		this.to = setTimeout(this.nextItem, 5000);
 	}
 
 	render() {
@@ -42,6 +59,7 @@ class MarqueeContainer extends Component {
 						{this.renderItems()}
 					</ReactCSSTransitionGroup>
 				</div>
+				<DotsContainer items={this.props.marquees} current={this.state.item} changeItem={this.changeItem} />
 			</div>
 		);
 	}

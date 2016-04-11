@@ -3,6 +3,9 @@
 
 	--white: #FFFFFF;
 	--black: #000000;
+	--med-grey: #666666;
+	--light-grey: #cccccc;
+
 	/************************  BODY  ************************/
 	--body-background: url(var(--imgPath)background.jpg) #000 no-repeat center center/cover;
 
@@ -10,8 +13,10 @@
 	--copy-color: var(--white);
 	--link-color: var(--white);
 
-	/************************  HEADER  ************************/
+	/************************  MARQUEE  ************************/
 	--marquee-background: var(--black);
+	--dot-color: var(--med-grey);
+	--dot-highlight: var(--light-grey);
 
 	/************************  HEADER  ************************/
 }

@@ -5,6 +5,12 @@
 	/*************************  MARQUEE *********************************/
 	--marquee-height: 500px;
 
+	--dots-margin-top: 35px;
+
+	--dot-size: 12px;
+	--dot-spacing: 10px;
+
+
 	/************************** FOOTER **********************************/
 	--footer-padding: 50px;
 }

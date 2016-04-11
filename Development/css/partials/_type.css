@@ -40,7 +40,8 @@ p{
 }
 
 a{
-
+	text-decoration: none !important;
+	cursor: pointer;
 }
 
 li{
