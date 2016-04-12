@@ -10,7 +10,8 @@ class Slider extends Component {
 		super(props);
 
 		this.state = {
-			page: 0
+			page: 0,
+			direction: "left"
 		}
 
 		this.perpage = (this.props.perpage) ? Number(this.props.perpage) : 3;
@@ -32,6 +33,7 @@ class Slider extends Component {
 		if (p>m) p = 0;
 
 		this.setState({
+			direction: (num==1) ? "left" : "right",
 			page: p
 		});
 	}
@@ -42,8 +44,10 @@ class Slider extends Component {
 		}
 
 		return (
-			<div className="slider">
-				<SliderPage items={this.createPageItems()} itemclass={this.props.itemclass} page={this.state.page} />
+			<div className={"slider "+this.state.direction}>
+				<ReactCSSTransitionGroup transitionName="slidein" transitionEnterTimeout={500} transitionLeaveTimeout={500} >
+					<SliderPage key={"sliderpage"+this.state.page} items={this.createPageItems()} itemclass={this.props.itemclass} page={this.state.page} />
+				</ReactCSSTransitionGroup>
 
 				<a className="next arrow glyphicon glyphicon-chevron-right" onClick={()=>this.changePage(1)}></a>
 				<a className="previous arrow glyphicon glyphicon-chevron-left" onClick={()=>this.changePage(-1)}></a>

@@ -154,9 +154,14 @@ body{
     clear: both;
     position: relative;
     margin-top: 20px;
+    height: 200px;
 }
 .slider .page{
+    position: absolute;
+    top: 0;
+    left: 0%;
     height: 200px;
+    width: 100%;
 }
 .slider .page .item{
     height: 200px;
@@ -175,6 +180,41 @@ body{
 }
 .slider .arrow.next{
     right: 0;
+}
+.slider .arrow.previous{
+    left: 0;
+}
+.slider.left .slidein-enter{
+    left: 100%;
+}
+.slider.left .slidein-enter.slidein-enter-active{
+    left: 0%;
+    -webkit-transition: left .5s ease-in;
+    transition: left .5s ease-in;
+}
+.slider.left .slidein-leave{
+    left: 0%;
+}
+.slider.left .slidein-leave.slidein-leave-active{
+    left: -100%;
+    -webkit-transition: left .5s ease-in;
+    transition: left .5s ease-in;
+}
+.slider.right .slidein-enter{
+    left: -100%;
+}
+.slider.right .slidein-enter.slidein-enter-active{
+    left: 0%;
+    -webkit-transition: left .5s ease-in;
+    transition: left .5s ease-in;
+}
+.slider.right .slidein-leave{
+    left: 0%;
+}
+.slider.right .slidein-leave.slidein-leave-active{
+    left: 100%;
+    -webkit-transition: left .5s ease-in;
+    transition: left .5s ease-in;
 }
 .footer{
     padding-top: 50px;

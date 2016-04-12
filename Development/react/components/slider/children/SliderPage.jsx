@@ -23,8 +23,10 @@ class SliderPage extends Component {
 		if (!this.props.items) return <div></div>
 
 		return(
-			<div className={"row page page"+this.props.page} >
-				{this.createItems()}
+			<div className={"page page"+this.props.page} >
+				<div className="row">
+					{this.createItems()}
+				</div>
 			</div>
 		);
 	}
