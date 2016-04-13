@@ -6,235 +6,243 @@
 1 verbose cli   'react-addons-css-transition-group' ]
 2 info using npm@2.14.12
 3 info using node@v4.2.4
-4 verbose install initial load of /Users/bgrisinger/Desktop/Starter/package.json
+4 verbose install initial load of /Users/bgrisinger/Desktop/REPOS/Starter/package.json
 5 warn package.json simple-react-site@1.0.0 No repository field.
-6 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/axios/package.json
-7 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/babel-preset-es2015/package.json
-8 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/babel-preset-react/package.json
-9 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/babelify/package.json
-10 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/bootstrap/package.json
-11 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/browser-sync/package.json
-12 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/browserify/package.json
-13 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/connect-history-api-fallback/package.json
-14 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/css-mqpacker/package.json
-15 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/gulp/package.json
-16 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/gulp-concat/package.json
-17 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/gulp-jade/package.json
-18 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/gulp-plumber/package.json
-19 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/gulp-postcss/package.json
-20 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/gulp-uglify/package.json
-21 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/history/package.json
-22 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/jquery/package.json
-23 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/postcss-cssnext/package.json
-24 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/precss/package.json
-25 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/react/package.json
-26 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/react-dom/package.json
-27 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/react-redux/package.json
-28 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/react-router/package.json
-29 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/redux/package.json
-30 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/redux-promise/package.json
-31 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/underscore/package.json
-32 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/vinyl-buffer/package.json
-33 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/Starter/node_modules/vinyl-source-stream/package.json
-34 verbose readDependencies loading dependencies from /Users/bgrisinger/Desktop/Starter/package.json
-35 silly cache add args [ 'react-addons-css-transition-group', null ]
-36 verbose cache add spec react-addons-css-transition-group
-37 silly cache add parsed spec Result {
-37 silly cache add   raw: 'react-addons-css-transition-group',
-37 silly cache add   scope: null,
-37 silly cache add   name: 'react-addons-css-transition-group',
-37 silly cache add   rawSpec: '',
-37 silly cache add   spec: 'latest',
-37 silly cache add   type: 'tag' }
-38 silly addNamed react-addons-css-transition-group@latest
-39 verbose addNamed "latest" is being treated as a dist-tag for react-addons-css-transition-group
-40 info addNameTag [ 'react-addons-css-transition-group', 'latest' ]
-41 silly mapToRegistry name react-addons-css-transition-group
-42 silly mapToRegistry using default registry
-43 silly mapToRegistry registry https://registry.npmjs.org/
-44 silly mapToRegistry uri https://registry.npmjs.org/react-addons-css-transition-group
-45 verbose addNameTag registry:https://registry.npmjs.org/react-addons-css-transition-group not in flight; fetching
-46 verbose request uri https://registry.npmjs.org/react-addons-css-transition-group
-47 verbose request no auth needed
-48 info attempt registry request try #1 at 4:07:21 PM
-49 verbose request id eccdd0d2ec0ce18f
-50 verbose etag "CN3NJO5OKPDAZV5WYCZ2CFMET"
-51 http request GET https://registry.npmjs.org/react-addons-css-transition-group
-52 http 200 https://registry.npmjs.org/react-addons-css-transition-group
-53 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-53 verbose headers   etag: '"2YHBWONUJR3VHPFWTTS86W8EI"',
-53 verbose headers   'content-type': 'application/json',
-53 verbose headers   'cache-control': 'max-age=300',
-53 verbose headers   'content-length': '21187',
-53 verbose headers   'accept-ranges': 'bytes',
-53 verbose headers   date: 'Thu, 07 Apr 2016 22:05:30 GMT',
-53 verbose headers   via: '1.1 varnish',
-53 verbose headers   age: '17',
-53 verbose headers   connection: 'keep-alive',
-53 verbose headers   'x-served-by': 'cache-dfw1839-DFW',
-53 verbose headers   'x-cache': 'HIT',
-53 verbose headers   'x-cache-hits': '1',
-53 verbose headers   'x-timer': 'S1460066730.884776,VS0,VE0',
-53 verbose headers   vary: 'Accept-Encoding' }
-54 silly get cb [ 200,
-54 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-54 silly get     etag: '"2YHBWONUJR3VHPFWTTS86W8EI"',
-54 silly get     'content-type': 'application/json',
-54 silly get     'cache-control': 'max-age=300',
-54 silly get     'content-length': '21187',
-54 silly get     'accept-ranges': 'bytes',
-54 silly get     date: 'Thu, 07 Apr 2016 22:05:30 GMT',
-54 silly get     via: '1.1 varnish',
-54 silly get     age: '17',
-54 silly get     connection: 'keep-alive',
-54 silly get     'x-served-by': 'cache-dfw1839-DFW',
-54 silly get     'x-cache': 'HIT',
-54 silly get     'x-cache-hits': '1',
-54 silly get     'x-timer': 'S1460066730.884776,VS0,VE0',
-54 silly get     vary: 'Accept-Encoding' } ]
-55 verbose get saving react-addons-css-transition-group to /Users/bgrisinger/.npm/registry.npmjs.org/react-addons-css-transition-group/.cache.json
-56 silly addNameTag next cb for react-addons-css-transition-group with tag latest
-57 silly addNamed react-addons-css-transition-group@15.0.0
-58 verbose addNamed "15.0.0" is a plain semver version for react-addons-css-transition-group
-59 silly mapToRegistry name react-addons-css-transition-group
-60 silly mapToRegistry using default registry
-61 silly mapToRegistry registry https://registry.npmjs.org/
-62 silly mapToRegistry uri https://registry.npmjs.org/react-addons-css-transition-group
-63 verbose addRemoteTarball https://registry.npmjs.org/react-addons-css-transition-group/-/react-addons-css-transition-group-15.0.0.tgz not in flight; adding
-64 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-addons-css-transition-group/-/react-addons-css-transition-group-15.0.0.tgz',
-64 verbose addRemoteTarball   '8abdffae4adcb467ce7b6a99bdeb49f991ae93c4' ]
-65 info retry fetch attempt 1 at 4:07:21 PM
-66 info attempt registry request try #1 at 4:07:21 PM
-67 http fetch GET https://registry.npmjs.org/react-addons-css-transition-group/-/react-addons-css-transition-group-15.0.0.tgz
-68 http fetch 200 https://registry.npmjs.org/react-addons-css-transition-group/-/react-addons-css-transition-group-15.0.0.tgz
-69 silly fetchAndShaCheck shasum 8abdffae4adcb467ce7b6a99bdeb49f991ae93c4
-70 verbose addTmpTarball /var/folders/nv/6zpd7bhj6ngccjmgk9bk0m68qcvysm/T/npm-90771-f094526d/registry.npmjs.org/react-addons-css-transition-group/-/react-addons-css-transition-group-15.0.0.tgz not in flight; adding
-71 verbose addTmpTarball already have metadata; skipping unpack for react-addons-css-transition-group@15.0.0
-72 silly cache afterAdd react-addons-css-transition-group@15.0.0
-73 verbose afterAdd /Users/bgrisinger/.npm/react-addons-css-transition-group/15.0.0/package/package.json not in flight; writing
-74 verbose afterAdd /Users/bgrisinger/.npm/react-addons-css-transition-group/15.0.0/package/package.json written
-75 silly install resolved [ { name: 'react-addons-css-transition-group',
-75 silly install resolved     version: '15.0.0',
-75 silly install resolved     main: 'index.js',
-75 silly install resolved     repository:
-75 silly install resolved      { type: 'git',
-75 silly install resolved        url: 'git+https://github.com/facebook/react.git' },
-75 silly install resolved     keywords: [ 'react', 'react-addon' ],
-75 silly install resolved     license: 'BSD-3-Clause',
-75 silly install resolved     dependencies: {},
-75 silly install resolved     peerDependencies: { react: '^15.0.0' },
-75 silly install resolved     description: 'This package provides the React CSSTransitionGroup add-on.',
-75 silly install resolved     bugs: { url: 'https://github.com/facebook/react/issues' },
-75 silly install resolved     homepage: 'https://github.com/facebook/react#readme',
-75 silly install resolved     _id: 'react-addons-css-transition-group@15.0.0',
-75 silly install resolved     _shasum: '8abdffae4adcb467ce7b6a99bdeb49f991ae93c4',
-75 silly install resolved     _resolved: 'https://registry.npmjs.org/react-addons-css-transition-group/-/react-addons-css-transition-group-15.0.0.tgz',
-75 silly install resolved     _from: 'react-addons-css-transition-group@latest',
-75 silly install resolved     scripts: {},
-75 silly install resolved     _npmVersion: '2.15.3',
-75 silly install resolved     _nodeVersion: '4.4.0',
-75 silly install resolved     _npmUser: { name: 'zpao', email: 'paul@oshannessy.com' },
-75 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
-75 silly install resolved     dist:
-75 silly install resolved      { shasum: '8abdffae4adcb467ce7b6a99bdeb49f991ae93c4',
-75 silly install resolved        tarball: 'https://registry.npmjs.org/react-addons-css-transition-group/-/react-addons-css-transition-group-15.0.0.tgz' },
-75 silly install resolved     _npmOperationalInternal:
-75 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
-75 silly install resolved        tmp: 'tmp/react-addons-css-transition-group-15.0.0.tgz_1460064347700_0.7622950624208897' },
-75 silly install resolved     directories: {} } ]
-76 info install react-addons-css-transition-group@15.0.0 into /Users/bgrisinger/Desktop/Starter
-77 info installOne react-addons-css-transition-group@15.0.0
-78 verbose installOne of react-addons-css-transition-group to /Users/bgrisinger/Desktop/Starter not in flight; installing
-79 verbose lock using /Users/bgrisinger/.npm/_locks/react-addons-css-transit-086d362763dc42b2.lock for /Users/bgrisinger/Desktop/Starter/node_modules/react-addons-css-transition-group
-80 silly install write writing react-addons-css-transition-group 15.0.0 to /Users/bgrisinger/Desktop/Starter/node_modules/react-addons-css-transition-group
-81 verbose unbuild node_modules/react-addons-css-transition-group
-82 silly gentlyRm /Users/bgrisinger/Desktop/Starter/node_modules/react-addons-css-transition-group is being purged from base /Users/bgrisinger/Desktop/Starter
-83 verbose gentlyRm don't care about contents; nuking /Users/bgrisinger/Desktop/Starter/node_modules/react-addons-css-transition-group
-84 verbose tar unpack /Users/bgrisinger/.npm/react-addons-css-transition-group/15.0.0/package.tgz
-85 verbose tar unpacking to /Users/bgrisinger/Desktop/Starter/node_modules/react-addons-css-transition-group
-86 silly gentlyRm /Users/bgrisinger/Desktop/Starter/node_modules/react-addons-css-transition-group is being purged
-87 verbose gentlyRm don't care about contents; nuking /Users/bgrisinger/Desktop/Starter/node_modules/react-addons-css-transition-group
-88 silly gunzTarPerm modes [ '755', '644' ]
-89 silly gunzTarPerm extractEntry package.json
-90 silly gunzTarPerm extractEntry README.md
-91 silly gunzTarPerm extractEntry LICENSE
-92 silly gunzTarPerm extractEntry index.js
-93 silly gunzTarPerm extractEntry PATENTS
-94 verbose write writing to /Users/bgrisinger/Desktop/Starter/node_modules/react-addons-css-transition-group/package.json
-95 info preinstall react-addons-css-transition-group@15.0.0
-96 verbose readDependencies loading dependencies from /Users/bgrisinger/Desktop/Starter/node_modules/react-addons-css-transition-group/package.json
-97 silly prepareForInstallMany adding react@^15.0.0 from react-addons-css-transition-group peerDependencies
-98 warn peerDependencies The peer dependency react@^15.0.0 included from react-addons-css-transition-group will no
-99 warn peerDependencies longer be automatically installed to fulfill the peerDependency
-100 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
-101 verbose readDependencies loading dependencies from /Users/bgrisinger/Desktop/Starter/node_modules/react-addons-css-transition-group/package.json
-102 silly install resolved []
-103 verbose about to build /Users/bgrisinger/Desktop/Starter/node_modules/react-addons-css-transition-group
-104 info build /Users/bgrisinger/Desktop/Starter/node_modules/react-addons-css-transition-group
-105 info linkStuff react-addons-css-transition-group@15.0.0
-106 silly linkStuff react-addons-css-transition-group@15.0.0 has /Users/bgrisinger/Desktop/Starter/node_modules as its parent node_modules
-107 verbose linkBins react-addons-css-transition-group@15.0.0
-108 verbose linkMans react-addons-css-transition-group@15.0.0
-109 verbose rebuildBundles react-addons-css-transition-group@15.0.0
-110 info install react-addons-css-transition-group@15.0.0
-111 info postinstall react-addons-css-transition-group@15.0.0
-112 verbose readDependencies loading dependencies from /Users/bgrisinger/Desktop/Starter/package.json
-113 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/axios/package.json
-114 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/babel-preset-es2015/package.json
-115 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/babel-preset-react/package.json
-116 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/babelify/package.json
-117 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/bootstrap/package.json
-118 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/browser-sync/package.json
-119 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/browserify/package.json
-120 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/connect-history-api-fallback/package.json
-121 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/css-mqpacker/package.json
-122 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/gulp/package.json
-123 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/gulp-concat/package.json
-124 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/gulp-jade/package.json
-125 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/gulp-plumber/package.json
-126 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/gulp-postcss/package.json
-127 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/gulp-uglify/package.json
-128 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/history/package.json
-129 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/jquery/package.json
-130 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/postcss-cssnext/package.json
-131 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/precss/package.json
-132 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/react/package.json
-133 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/react-addons-css-transition-group/package.json
-134 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/react-dom/package.json
-135 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/react-redux/package.json
-136 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/react-router/package.json
-137 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/redux/package.json
-138 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/redux-promise/package.json
-139 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/underscore/package.json
-140 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/vinyl-buffer/package.json
-141 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/vinyl-source-stream/package.json
-142 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/.bin/browser-sync/package.json
-143 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/.bin/browserify/package.json
-144 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/.bin/gulp/package.json
-145 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/Starter/node_modules/.bin/mqpacker/package.json
-146 verbose already installed skipping react@^15.0.0 /Users/bgrisinger/Desktop/Starter
-147 silly install resolved []
-148 verbose unlock done using /Users/bgrisinger/.npm/_locks/react-addons-css-transit-086d362763dc42b2.lock for /Users/bgrisinger/Desktop/Starter/node_modules/react-addons-css-transition-group
-149 verbose validateInstall loading /Users/bgrisinger/Desktop/Starter/package.json for validation
-150 verbose stack Error: The package react@0.14.8 does not satisfy its siblings' peerDependencies requirements!
-150 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
-150 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
-150 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
-150 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-150 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-150 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-150 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-150 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-150 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-150 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-151 verbose cwd /Users/bgrisinger/Desktop/Starter
-152 error Darwin 14.5.0
-153 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--save" "react-addons-css-transition-group"
-154 error node v4.2.4
-155 error npm  v2.14.12
-156 error code EPEERINVALID
-157 error peerinvalid The package react@0.14.8 does not satisfy its siblings' peerDependencies requirements!
-157 error peerinvalid Peer react-dom@0.14.8 wants react@^0.14.8
-157 error peerinvalid Peer react-redux@4.4.1 wants react@^0.14.0 || ^15.0.0-rc.1
-157 error peerinvalid Peer react-addons-css-transition-group@15.0.0 wants react@^15.0.0
-158 verbose exit [ 1, true ]
+6 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/axios/package.json
+7 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/babel-preset-es2015/package.json
+8 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/babel-preset-react/package.json
+9 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/babelify/package.json
+10 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/bootstrap/package.json
+11 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/browser-sync/package.json
+12 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/browserify/package.json
+13 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/connect-history-api-fallback/package.json
+14 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/css-mqpacker/package.json
+15 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/gulp/package.json
+16 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/gulp-concat/package.json
+17 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/gulp-jade/package.json
+18 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/gulp-plumber/package.json
+19 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/gulp-postcss/package.json
+20 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/gulp-uglify/package.json
+21 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/history/package.json
+22 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/jquery/package.json
+23 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/postcss-cssnext/package.json
+24 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/precss/package.json
+25 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/react/package.json
+26 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/react-addons-css-transition-group/package.json
+27 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/react-dom/package.json
+28 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/react-redux/package.json
+29 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/react-router/package.json
+30 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/redux/package.json
+31 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/redux-promise/package.json
+32 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/underscore/package.json
+33 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/vinyl-buffer/package.json
+34 verbose installManyTop reading scoped package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/vinyl-source-stream/package.json
+35 verbose readDependencies loading dependencies from /Users/bgrisinger/Desktop/REPOS/Starter/package.json
+36 verbose install react-addons-css-transition-group is installed as 15.0.0
+37 silly cache add args [ 'react-addons-css-transition-group', null ]
+38 verbose cache add spec react-addons-css-transition-group
+39 silly cache add parsed spec Result {
+39 silly cache add   raw: 'react-addons-css-transition-group',
+39 silly cache add   scope: null,
+39 silly cache add   name: 'react-addons-css-transition-group',
+39 silly cache add   rawSpec: '',
+39 silly cache add   spec: 'latest',
+39 silly cache add   type: 'tag' }
+40 silly addNamed react-addons-css-transition-group@latest
+41 verbose addNamed "latest" is being treated as a dist-tag for react-addons-css-transition-group
+42 info addNameTag [ 'react-addons-css-transition-group', 'latest' ]
+43 silly mapToRegistry name react-addons-css-transition-group
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry uri https://registry.npmjs.org/react-addons-css-transition-group
+47 verbose addNameTag registry:https://registry.npmjs.org/react-addons-css-transition-group not in flight; fetching
+48 verbose request uri https://registry.npmjs.org/react-addons-css-transition-group
+49 verbose request no auth needed
+50 info attempt registry request try #1 at 1:12:29 PM
+51 verbose request id d47f91775b6b135b
+52 verbose etag "2YHBWONUJR3VHPFWTTS86W8EI"
+53 http request GET https://registry.npmjs.org/react-addons-css-transition-group
+54 http 200 https://registry.npmjs.org/react-addons-css-transition-group
+55 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+55 verbose headers   etag: '"F2M14S3HDEV7BAW8DPQB96D8D"',
+55 verbose headers   'content-type': 'application/json',
+55 verbose headers   'cache-control': 'max-age=300',
+55 verbose headers   'content-length': '22672',
+55 verbose headers   'accept-ranges': 'bytes',
+55 verbose headers   date: 'Wed, 13 Apr 2016 19:10:26 GMT',
+55 verbose headers   via: '1.1 varnish',
+55 verbose headers   age: '256',
+55 verbose headers   connection: 'keep-alive',
+55 verbose headers   'x-served-by': 'cache-dfw1840-DFW',
+55 verbose headers   'x-cache': 'HIT',
+55 verbose headers   'x-cache-hits': '1',
+55 verbose headers   'x-timer': 'S1460574626.453636,VS0,VE0',
+55 verbose headers   vary: 'Accept-Encoding' }
+56 silly get cb [ 200,
+56 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+56 silly get     etag: '"F2M14S3HDEV7BAW8DPQB96D8D"',
+56 silly get     'content-type': 'application/json',
+56 silly get     'cache-control': 'max-age=300',
+56 silly get     'content-length': '22672',
+56 silly get     'accept-ranges': 'bytes',
+56 silly get     date: 'Wed, 13 Apr 2016 19:10:26 GMT',
+56 silly get     via: '1.1 varnish',
+56 silly get     age: '256',
+56 silly get     connection: 'keep-alive',
+56 silly get     'x-served-by': 'cache-dfw1840-DFW',
+56 silly get     'x-cache': 'HIT',
+56 silly get     'x-cache-hits': '1',
+56 silly get     'x-timer': 'S1460574626.453636,VS0,VE0',
+56 silly get     vary: 'Accept-Encoding' } ]
+57 verbose get saving react-addons-css-transition-group to /Users/bgrisinger/.npm/registry.npmjs.org/react-addons-css-transition-group/.cache.json
+58 silly addNameTag next cb for react-addons-css-transition-group with tag latest
+59 silly addNamed react-addons-css-transition-group@15.0.1
+60 verbose addNamed "15.0.1" is a plain semver version for react-addons-css-transition-group
+61 silly mapToRegistry name react-addons-css-transition-group
+62 silly mapToRegistry using default registry
+63 silly mapToRegistry registry https://registry.npmjs.org/
+64 silly mapToRegistry uri https://registry.npmjs.org/react-addons-css-transition-group
+65 verbose addRemoteTarball https://registry.npmjs.org/react-addons-css-transition-group/-/react-addons-css-transition-group-15.0.1.tgz not in flight; adding
+66 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-addons-css-transition-group/-/react-addons-css-transition-group-15.0.1.tgz',
+66 verbose addRemoteTarball   '649ae8464dfcc42a4f41a597e94de300c0cec4a0' ]
+67 info retry fetch attempt 1 at 1:12:29 PM
+68 info attempt registry request try #1 at 1:12:29 PM
+69 http fetch GET https://registry.npmjs.org/react-addons-css-transition-group/-/react-addons-css-transition-group-15.0.1.tgz
+70 http fetch 200 https://registry.npmjs.org/react-addons-css-transition-group/-/react-addons-css-transition-group-15.0.1.tgz
+71 silly fetchAndShaCheck shasum 649ae8464dfcc42a4f41a597e94de300c0cec4a0
+72 verbose addTmpTarball /var/folders/nv/6zpd7bhj6ngccjmgk9bk0m68qcvysm/T/npm-93212-f2f64a6c/registry.npmjs.org/react-addons-css-transition-group/-/react-addons-css-transition-group-15.0.1.tgz not in flight; adding
+73 verbose addTmpTarball already have metadata; skipping unpack for react-addons-css-transition-group@15.0.1
+74 silly cache afterAdd react-addons-css-transition-group@15.0.1
+75 verbose afterAdd /Users/bgrisinger/.npm/react-addons-css-transition-group/15.0.1/package/package.json not in flight; writing
+76 verbose afterAdd /Users/bgrisinger/.npm/react-addons-css-transition-group/15.0.1/package/package.json written
+77 silly install resolved [ { name: 'react-addons-css-transition-group',
+77 silly install resolved     version: '15.0.1',
+77 silly install resolved     main: 'index.js',
+77 silly install resolved     repository:
+77 silly install resolved      { type: 'git',
+77 silly install resolved        url: 'git+https://github.com/facebook/react.git' },
+77 silly install resolved     keywords: [ 'react', 'react-addon' ],
+77 silly install resolved     license: 'BSD-3-Clause',
+77 silly install resolved     dependencies: {},
+77 silly install resolved     peerDependencies: { react: '^15.0.1' },
+77 silly install resolved     description: 'This package provides the React CSSTransitionGroup add-on.',
+77 silly install resolved     bugs: { url: 'https://github.com/facebook/react/issues' },
+77 silly install resolved     homepage: 'https://github.com/facebook/react#readme',
+77 silly install resolved     _id: 'react-addons-css-transition-group@15.0.1',
+77 silly install resolved     _shasum: '649ae8464dfcc42a4f41a597e94de300c0cec4a0',
+77 silly install resolved     _resolved: 'https://registry.npmjs.org/react-addons-css-transition-group/-/react-addons-css-transition-group-15.0.1.tgz',
+77 silly install resolved     _from: 'react-addons-css-transition-group@latest',
+77 silly install resolved     scripts: {},
+77 silly install resolved     _npmVersion: '2.15.0',
+77 silly install resolved     _nodeVersion: '4.4.2',
+77 silly install resolved     _npmUser: { name: 'zpao', email: 'paul@oshannessy.com' },
+77 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+77 silly install resolved     dist:
+77 silly install resolved      { shasum: '649ae8464dfcc42a4f41a597e94de300c0cec4a0',
+77 silly install resolved        tarball: 'https://registry.npmjs.org/react-addons-css-transition-group/-/react-addons-css-transition-group-15.0.1.tgz' },
+77 silly install resolved     _npmOperationalInternal:
+77 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+77 silly install resolved        tmp: 'tmp/react-addons-css-transition-group-15.0.1.tgz_1460139847236_0.24711652379482985' },
+77 silly install resolved     directories: {} } ]
+78 info install react-addons-css-transition-group@15.0.1 into /Users/bgrisinger/Desktop/REPOS/Starter
+79 info installOne react-addons-css-transition-group@15.0.1
+80 verbose installOne of react-addons-css-transition-group to /Users/bgrisinger/Desktop/REPOS/Starter not in flight; installing
+81 verbose lock using /Users/bgrisinger/.npm/_locks/react-addons-css-transit-461df06946ff55ac.lock for /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/react-addons-css-transition-group
+82 silly install write writing react-addons-css-transition-group 15.0.1 to /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/react-addons-css-transition-group
+83 verbose unbuild node_modules/react-addons-css-transition-group
+84 info preuninstall react-addons-css-transition-group@15.0.0
+85 info uninstall react-addons-css-transition-group@15.0.0
+86 verbose unbuild rmStuff react-addons-css-transition-group@15.0.0 from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules
+87 info postuninstall react-addons-css-transition-group@15.0.0
+88 silly gentlyRm /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/react-addons-css-transition-group is being purged from base /Users/bgrisinger/Desktop/REPOS/Starter
+89 verbose gentlyRm don't care about contents; nuking /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/react-addons-css-transition-group
+90 silly vacuum-fs purging /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/react-addons-css-transition-group
+91 silly vacuum-fs quitting because other entries in /Users/bgrisinger/Desktop/REPOS/Starter/node_modules
+92 verbose tar unpack /Users/bgrisinger/.npm/react-addons-css-transition-group/15.0.1/package.tgz
+93 verbose tar unpacking to /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/react-addons-css-transition-group
+94 silly gentlyRm /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/react-addons-css-transition-group is being purged
+95 verbose gentlyRm don't care about contents; nuking /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/react-addons-css-transition-group
+96 silly gunzTarPerm modes [ '755', '644' ]
+97 silly gunzTarPerm extractEntry package.json
+98 silly gunzTarPerm extractEntry README.md
+99 silly gunzTarPerm extractEntry LICENSE
+100 silly gunzTarPerm extractEntry index.js
+101 silly gunzTarPerm extractEntry PATENTS
+102 verbose write writing to /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/react-addons-css-transition-group/package.json
+103 info preinstall react-addons-css-transition-group@15.0.1
+104 verbose readDependencies loading dependencies from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/react-addons-css-transition-group/package.json
+105 silly prepareForInstallMany adding react@^15.0.1 from react-addons-css-transition-group peerDependencies
+106 warn peerDependencies The peer dependency react@^15.0.1 included from react-addons-css-transition-group will no
+107 warn peerDependencies longer be automatically installed to fulfill the peerDependency
+108 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
+109 verbose readDependencies loading dependencies from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/react-addons-css-transition-group/package.json
+110 silly install resolved []
+111 verbose about to build /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/react-addons-css-transition-group
+112 info build /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/react-addons-css-transition-group
+113 info linkStuff react-addons-css-transition-group@15.0.1
+114 silly linkStuff react-addons-css-transition-group@15.0.1 has /Users/bgrisinger/Desktop/REPOS/Starter/node_modules as its parent node_modules
+115 verbose linkBins react-addons-css-transition-group@15.0.1
+116 verbose linkMans react-addons-css-transition-group@15.0.1
+117 verbose rebuildBundles react-addons-css-transition-group@15.0.1
+118 info install react-addons-css-transition-group@15.0.1
+119 info postinstall react-addons-css-transition-group@15.0.1
+120 verbose readDependencies loading dependencies from /Users/bgrisinger/Desktop/REPOS/Starter/package.json
+121 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/axios/package.json
+122 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/babel-preset-es2015/package.json
+123 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/babel-preset-react/package.json
+124 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/babelify/package.json
+125 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/bootstrap/package.json
+126 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/browser-sync/package.json
+127 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/browserify/package.json
+128 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/connect-history-api-fallback/package.json
+129 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/css-mqpacker/package.json
+130 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/gulp/package.json
+131 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/gulp-concat/package.json
+132 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/gulp-jade/package.json
+133 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/gulp-plumber/package.json
+134 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/gulp-postcss/package.json
+135 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/gulp-uglify/package.json
+136 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/history/package.json
+137 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/jquery/package.json
+138 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/postcss-cssnext/package.json
+139 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/precss/package.json
+140 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/react/package.json
+141 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/react-addons-css-transition-group/package.json
+142 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/react-dom/package.json
+143 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/react-redux/package.json
+144 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/react-router/package.json
+145 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/redux/package.json
+146 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/redux-promise/package.json
+147 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/underscore/package.json
+148 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/vinyl-buffer/package.json
+149 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/vinyl-source-stream/package.json
+150 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/.bin/browser-sync/package.json
+151 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/.bin/browserify/package.json
+152 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/.bin/gulp/package.json
+153 verbose targetResolver reading package data from /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/.bin/mqpacker/package.json
+154 verbose already installed skipping react@^15.0.1 /Users/bgrisinger/Desktop/REPOS/Starter
+155 silly install resolved []
+156 verbose unlock done using /Users/bgrisinger/.npm/_locks/react-addons-css-transit-461df06946ff55ac.lock for /Users/bgrisinger/Desktop/REPOS/Starter/node_modules/react-addons-css-transition-group
+157 verbose validateInstall loading /Users/bgrisinger/Desktop/REPOS/Starter/package.json for validation
+158 verbose stack Error: The package react@0.14.8 does not satisfy its siblings' peerDependencies requirements!
+158 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+158 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+158 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+158 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+158 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+158 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+158 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+158 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+158 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+158 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+159 verbose cwd /Users/bgrisinger/Desktop/REPOS/Starter
+160 error Darwin 14.5.0
+161 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--save" "react-addons-css-transition-group"
+162 error node v4.2.4
+163 error npm  v2.14.12
+164 error code EPEERINVALID
+165 error peerinvalid The package react@0.14.8 does not satisfy its siblings' peerDependencies requirements!
+165 error peerinvalid Peer react-dom@0.14.8 wants react@^0.14.8
+165 error peerinvalid Peer react-redux@4.4.1 wants react@^0.14.0 || ^15.0.0-rc.1
+165 error peerinvalid Peer react-addons-css-transition-group@15.0.1 wants react@^15.0.1
+166 verbose exit [ 1, true ]
