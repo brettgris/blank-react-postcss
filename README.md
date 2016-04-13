@@ -1,4 +1,4 @@
-# SKELETOPN DEVELOPMENT WORKFLOW
+# SKELETON DEVELOPMENT WORKFLOW
 
 
 ## Why use a workflow
@@ -24,7 +24,7 @@ In my design common folder, in the **dev tools** install both "Node" & "Command 
 
 ### Update Ruby
 
-In terminal type this and then your password: 
+In terminal type this and then your password:
 
 ```
 sudo gem update
@@ -52,11 +52,11 @@ sudo gem install compass
 
 ## Using Gulp
 
-There are two main task runners that you will typically see for setting up development workflows. These are [Gulp](http://gulpjs.com/) and [Grunt](http://gruntjs.com/). We will be using Gulp because the configuration tends to be easier to write, but you typically see both used frequently. 
+There are two main task runners that you will typically see for setting up development workflows. These are [Gulp](http://gulpjs.com/) and [Grunt](http://gruntjs.com/). We will be using Gulp because the configuration tends to be easier to write, but you typically see both used frequently.
 
 ### First: Open Environment in Terminal
- 
-With terminal in your dock, drag the parent folder to terminal icon in your dock. This will open a window with the directory selected. 
+
+With terminal in your dock, drag the parent folder to terminal icon in your dock. This will open a window with the directory selected.
 
 Alternatively with terminal window already open, you type "cd " and then drag the parent folder to the window and press enter.
 
@@ -98,7 +98,7 @@ control & c
 
 ## Gulp Workflow Contents
 
-While most of you probably won't ever need to write your own workflow or tasks, it's still important to know what is happening. 
+While most of you probably won't ever need to write your own workflow or tasks, it's still important to know what is happening.
 
 ### Starting a new workflow from scratch
 
@@ -116,11 +116,11 @@ After running though the whole list of questions, you are to tell gulp what to a
 
 ### Install Packages
 
-Gulp uses NPM to install Plugins, which stands for "Node Package Manager." Using NPM enables you find and reuse packages of code. 
+Gulp uses NPM to install Plugins, which stands for "Node Package Manager." Using NPM enables you find and reuse packages of code.
 
-Plugins have to be installed before any tasks will work. These include like gulp, preprocessors like jade and postcss and things like minifiers and concating for JavaScript. 
+Plugins have to be installed before any tasks will work. These include like gulp, preprocessors like jade and postcss and things like minifiers and concating for JavaScript.
 
-To do this type 
+To do this type
 
 ```
 npm install --save-dev gulp
@@ -136,17 +136,17 @@ npm install --save-dev gulp gulp gulp-uglify gulp-concat browser-sync
 
 > Note: Packages that are needed on the production side and through browserify use --save instead of --save-dev. This can be plugins like jquery, bootstrap or underscore.
 
-##### Packages available 
+##### Packages available
 
 [https://www.npmjs.com/](https://www.npmjs.com/)
 
 ## Editing The Gulpfile.js
 
-You can edit the gulpfile.js to automate your tasks and plugins that you are using for development process. This is done by creating tasks and running them on load and then watching for changes to certain files to tell them run when changes occur. 
+You can edit the gulpfile.js to automate your tasks and plugins that you are using for development process. This is done by creating tasks and running them on load and then watching for changes to certain files to tell them run when changes occur.
 
 ### Include Packages
 
-The first step is to import all your different plugins and storing them in variables so you can use them in your tasks. Repeat for all plugins. For example: 
+The first step is to import all your different plugins and storing them in variables so you can use them in your tasks. Repeat for all plugins. For example:
 
 ```
 var gulp = require('gulp');
@@ -154,7 +154,7 @@ var gulp = require('gulp');
 
 ### Gulp Tasks
 
-Next you create the tasks that you want run. You do this by telling the task the location of the files desired and what type of files. Then you run through a chain of transformations that you want to happen. For example: 
+Next you create the tasks that you want run. You do this by telling the task the location of the files desired and what type of files. Then you run through a chain of transformations that you want to happen. For example:
 
 ```
 gulp.task('jade', function() {
@@ -167,7 +167,7 @@ gulp.task('jade', function() {
 ```
 > In this case, we are creating a task called 'jade' and pulling in files with the extension ".jade" from the "Development/jade" folder. We then run those files through the jade plugin, which turns the jade into html and we place the end files in the root of the "Production" folder.
 
-> Plugins will typically have documentation that will help show you how to use. Or there's always google. 
+> Plugins will typically have documentation that will help show you how to use. Or there's always google.
 
 ### Gulp Default Task
 
@@ -181,7 +181,7 @@ gulp.task('default', ['jade', 'postcss', 'react', 'json', 'includes', 'watch', '
 
 ### Gulp Watch
 
-To keep gulp updating our files as we edit them, we create watch files to tell our code to watch certain types of files and if changes occur within them to run the tasks associated with that type of file. 
+To keep gulp updating our files as we edit them, we create watch files to tell our code to watch certain types of files and if changes occur within them to run the tasks associated with that type of file.
 
 ```
 gulp.task('watch', function() {
@@ -196,7 +196,7 @@ gulp.task('watch', function() {
 
 ### Using BrowserSync to create a local server
 
-In our case, we are using browsersync (which is a plugin that we install) to create a local server. Through our watch task, we reload this on any changes that occur. 
+In our case, we are using browsersync (which is a plugin that we install) to create a local server. Through our watch task, we reload this on any changes that occur.
 
 ```
 gulp.task('sync', function() {
@@ -209,15 +209,15 @@ gulp.task('sync', function() {
 });
 ```
 
-> Note: Browsersync creates both a local and remote path so you can open your files on multiple devices and they all update and stay in sync with changes and as you click through the site. 
+> Note: Browsersync creates both a local and remote path so you can open your files on multiple devices and they all update and stay in sync with changes and as you click through the site.
 
 ## Tutorials
 
-#### Gulp Workflow: 
+#### Gulp Workflow:
 
 [https://www.lynda.com/Web-Design-tutorials/Web-Project-Workflows-Gulp-js-Git-Browserify/154416-2.html](https://www.lynda.com/Web-Design-tutorials/Web-Project-Workflows-Gulp-js-Git-Browserify/154416-2.html)
 
-#### Postcss 
+#### Postcss
 
 [https://www.lynda.com/CSS-tutorials/Building-Responsive-Single-Page-Design-PostCSS/417644-2.html](https://www.lynda.com/CSS-tutorials/Building-Responsive-Single-Page-Design-PostCSS/417644-2.html)
 
