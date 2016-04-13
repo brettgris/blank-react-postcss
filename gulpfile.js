@@ -49,8 +49,9 @@ gulp.task('react', function() {
     browserify('Development/react/App.jsx')
         .transform(babelify, { presets: ["es2015", "react"] })
         .bundle()
-        .on('error', function(error){
-            console.log (error.message);
+        .on('error', function(err){
+            console.log(err.message);
+            this.emit('end');
         })
         .pipe(source('app.min.js'))
         .pipe(buffer())
