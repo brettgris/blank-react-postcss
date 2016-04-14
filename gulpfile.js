@@ -2,7 +2,8 @@
 var gulp = require('gulp');
 
 // Include Our Plugins
-var jade = require('gulp-jade'),
+var del = require('del'),
+    jade = require('gulp-jade'),
     uglify = require('gulp-uglify'),
     plumber = require('gulp-plumber'),
     browserify = require('browserify'),
@@ -46,10 +47,12 @@ gulp.task('postcss', function() {
 });
 
 gulp.task('react', function() {
-    browserify('Development/react/App.jsx')
-        .transform(babelify, { presets: ["es2015", "react"] })
+    return browserify('Development/react/App.jsx')
+        .transform(babelify, {
+            presets: ["es2015", "react"]
+        })
         .bundle()
-        .on('error', function(err){
+        .on('error', function(err) {
             console.log(err.message);
             this.emit('end');
         })
@@ -59,13 +62,13 @@ gulp.task('react', function() {
         .pipe(gulp.dest('Production/js'));
 });
 
-gulp.task('json', function() {
-    gulp.src('Development/data/**/*.json')
+gulp.task('json', function(cb) {
+    return gulp.src('Development/data/**/*.json')
         .pipe(gulp.dest('Production/data'));
 });
 
 gulp.task('includes', function() {
-    gulp.src('Development/includes/**/*')
+    return gulp.src('Development/includes/**/*')
         .pipe(gulp.dest('Production/'));
 });
 
@@ -77,11 +80,12 @@ gulp.task('watch', function() {
     gulp.watch('Development/data/**/*.json', ['json']);
     gulp.watch('Development/includes/**/*', ['includes']);
     gulp.watch(['Production/**/*']).on('change', browserSync.reload);
+
 });
 
 // BROWSER SYNC
 gulp.task('sync', function() {
-    browserSync.init({
+    return browserSync.init({
         server: {
             baseDir: "Production/",
             middleware: [historyApiFallback()]
@@ -89,5 +93,14 @@ gulp.task('sync', function() {
     });
 });
 
+gulp.task('clean', function(cb){
+	del.sync(['./Production/**/*']);
+	cb(null);
+})
+
 // Default Task
-gulp.task('default', ['jade', 'postcss', 'react', 'json', 'includes', 'watch', 'sync']);
+gulp.task('default', ['clean', 'build'], function(){
+	browserSync.reload();
+});
+
+gulp.task('build', ['sync', 'jade', 'postcss', 'react', 'json', 'includes',  'watch']);
