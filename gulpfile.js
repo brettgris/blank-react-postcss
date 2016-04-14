@@ -23,9 +23,10 @@ gulp.task('jade', function() {
             }
         }))
         .pipe(jade({
-            pretty: true
+            pretty: false
         }))
-        .pipe(gulp.dest("Production/"));
+        .pipe(gulp.dest("Production/"))
+		  .pipe(browserSync.stream());
 });
 
 gulp.task('postcss', function() {
@@ -43,7 +44,8 @@ gulp.task('postcss', function() {
             }
         }))
         .pipe(postcss(processors))
-        .pipe(gulp.dest('Production/css'));
+        .pipe(gulp.dest('Production/css'))
+		  .pipe(browserSync.stream());
 });
 
 gulp.task('react', function() {
@@ -59,17 +61,20 @@ gulp.task('react', function() {
         .pipe(source('app.min.js'))
         .pipe(buffer())
         //.pipe(uglify())
-        .pipe(gulp.dest('Production/js'));
+        .pipe(gulp.dest('Production/js'))
+		  .pipe(browserSync.stream());
 });
 
 gulp.task('json', function(cb) {
     return gulp.src('Development/data/**/*.json')
-        .pipe(gulp.dest('Production/data'));
+        .pipe(gulp.dest('Production/data'))
+		  .pipe(browserSync.stream());
 });
 
 gulp.task('includes', function() {
     return gulp.src('Development/includes/**/*')
-        .pipe(gulp.dest('Production/'));
+        .pipe(gulp.dest('Production/'))
+		  .pipe(browserSync.stream());
 });
 
 // Watch Files For Changes
@@ -79,8 +84,6 @@ gulp.task('watch', function() {
     gulp.watch('Development/css/**/*.css', ['postcss']);
     gulp.watch('Development/data/**/*.json', ['json']);
     gulp.watch('Development/includes/**/*', ['includes']);
-    gulp.watch(['Production/**/*']).on('change', browserSync.reload);
-
 });
 
 // BROWSER SYNC
@@ -99,8 +102,8 @@ gulp.task('clean', function(cb){
 })
 
 // Default Task
-gulp.task('default', ['clean', 'build'], function(){
+gulp.task('default', ['clean', 'sync', 'build'], function(){
 	browserSync.reload();
 });
 
-gulp.task('build', ['sync', 'jade', 'postcss', 'react', 'json', 'includes',  'watch']);
+gulp.task('build', ['jade', 'postcss', 'react', 'json', 'includes',  'watch']);
